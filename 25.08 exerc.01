@@ -5,7 +5,7 @@ include<stdio.h>
 
 main (){
   int vetor[] = {20, 33, 2, 5};
-  int interno, externo, x, menor, cont, aux;
+  int interno, externo, indice, menor, cont;
   
   
   printf("vetor original \n");
@@ -16,7 +16,7 @@ main (){
   printf("\n\n");
   
   for=(externo=0; externo<TAM; externo++){
-    for(internp=TAM-1; interno>externo; interno --){
+    for(interno=TAM-1; interno>externo; interno--){
       if(vetor[interno-1]>vetor[interno]{
         aux=vetor[interno];
         vetor[interno]=vetor[interno-1];
