@@ -1,0 +1,34 @@
+
+include<stdio.h>
+#include<conio.h>
+#define TAM 4
+
+main (){
+  int vetor[] = {20, 33, 2, 5};
+  int interno, externo, x, menor, cont, aux;
+  
+  
+  printf("vetor original \n");
+  for  (cont=0; cont<TAM; cont++){
+        printf("%d", vetor[cont]);
+        }
+        
+  printf("\n\n");
+  
+  for=(externo=0; externo<TAM; externo++){
+    for(internp=TAM-1; interno>externo; interno --){
+      if(vetor[interno-1]>vetor[interno]{
+        aux=vetor[interno];
+        vetor[interno]=vetor[interno-1];
+        vetor[interno-1] = aux;
+        }
+      }
+    }
+    
+    printf("Vetor Ordenado \n");
+    for(cont=0; cont<TAM; cont++){
+      printf("%d", vetor[cont]);
+    }
+    
+  getch();
+  }
