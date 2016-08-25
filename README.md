@@ -1,3 +1,4 @@
 # estruturajean
-qq
-estrutura de dados
+#qqqq
+
+Exercícios e materiais de apoio ao estudo da aula de estrutura de dados do Jean.
