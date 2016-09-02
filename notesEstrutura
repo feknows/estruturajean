@@ -1,0 +1,25 @@
+
+### Estudar para a prova - 1ª Avaliação 15/09/2016 ; Busca, ordenação + Arquivo.
+
+
+1:
+- Preencher vetor (randon);
+- Exibir vetor;
+- Ordenar ( usar o algoritmo + eficiente );
+- realizar busca binária ( usuário informa a chave );
+- Salvar em arquivo o tempo da busca ( Não sobrescrever );
+- Exibir do arquivo os tempos armazenados;
+
+
+
+2:
+- Criar vetor 100.000;
+- Preencher (random);
+- Comparar o tempo de busca de ambos algoritmos;
+
+
+
+## Possível tema da prova, pode usar pendrive.##
+// Busca binária
+// Vetor Ordenado
+// Sucessivas Divisões
