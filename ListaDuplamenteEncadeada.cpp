@@ -1,3 +1,4 @@
+/* om/isabelaeduarda.campos?fref=pymk  */
 /*MOdelo de nó  |valor|prox| */
 
 /*Inserir no na cabeca 1) Criar um no 2) Apontar pra cabeca
