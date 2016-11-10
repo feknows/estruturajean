@@ -1,3 +1,6 @@
+24/11 - Avaliação 2 ( Listas )
+
+
 Lista dinâmica encadeada: 
 - Qualquer manupulação
 - O nó aponta para o próximo
@@ -34,3 +37,5 @@ Pilha:
 - Facilidade na manipulação
 - Primeiro nó aponta para NULL
 - Usa o sentinela: topo
+
+
