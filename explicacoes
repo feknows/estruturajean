@@ -1,0 +1,36 @@
+Lista dinâmica encadeada: 
+- Qualquer manupulação
+- O nó aponta para o próximo
+- Acesso unidirecional aos nós
+- complexidade na manupulação;
+- Últmo nó aponta para NULL;
+
+Lista Dinâmica duplamente encadeada:
+- Qualquer manipulação
+- Cada nó aponta para o anterior e para o próximo
+- Acesso bidirecional
+- facilidade na manipulação intermediaria
+- Primeiro e ultimo nó apontam para NULL
+
+Lista Dinâmica circular:
+- Qualquer manipulação
+- Cada nó aponta para o próximo
+- Acesso unidirecional
+- Complexidade na manipulação
+- ùltimo nó aponta para o primeiro nó
+
+Fila:
+- Manipulação restrita: Insere no final e exclui no inicio
+- Cada nó aponta para o próximo 
+- Acesso unidirecional
+- Facilidade na manipulação
+- Último nó aponta para NULL
+- Usa dois sentinelas: Cabeça e último
+
+Pilha:
+- Manipulação restrita: Insere e exclui no topo
+- Cada nó aponta para o anterior
+- Acesso unidirecional
+- Facilidade na manipulação
+- Primeiro nó aponta para NULL
+- Usa o sentinela: topo
