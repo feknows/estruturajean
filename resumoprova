@@ -1,0 +1,154 @@
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+main(){
+
+
+getch();
+}
+
+struct no{
+	int conteudo;
+	no *ant;
+	no *prox;
+}
+no *cabeca;
+
+
+//criar lista vazia
+void listaVazia(){
+	cabeca = NULL;
+	printf("\nLista criada e vazia");
+	getch();
+}
+	
+//inserir no inicio da lista	
+	void inserirInicio(int valor){
+		no *novo;
+		novo = (no*)malloc(sizeof(no));
+		novo -> conteudo = valor;
+		novo -> ant = NULL; //1a da lista ant. sempre aponta para null
+		novo -> prox = cabeca;
+		if(cabeca != NULL){ //verifica se existe elementos na lista
+			cabeca -> ant = novo; //liga o que era 1o. da lista no novo
+	}
+	cabeca = novo;
+	printf("\n\nNo inserido com sucesso");
+	getch();
+	}
+	
+//exibir a lista inteira	
+	void exibirTodaLista(){
+		no aux = cabeca;
+		printf("\n\nElementos da lista: \n\n");
+		while(aux != NULL){
+			printf("%& ", aux->conteudo);
+			aux = aux->prox;
+	}
+	getch();	
+	}
+	
+	//exibir inversamente
+void exibirInversamente(){
+	no *aux = cabeca;
+	printf("\n\nElementos da lista (inversamente): \n\n");
+	while(aux->prox != NULL){ //posiciona o aux no ultimo no
+	aux = aux->prox;
+	}
+		while (aux != NULL){
+			printf("%& ", aux->conteudo);
+			aux = aux->ant;
+		}
+}
+
+//localizar umvalor especificado pelo usuario
+void (localizarValor(int valor){
+	no *aux = cabeca;
+	int cont=0, flag = 0;
+	white(aux != NULL{
+		cont++;
+		if(aux->conteudo == valor){
+			printf("\n\nElemento localizado na %d posicao", cont);
+			flag = 1;
+		}
+		aux = aux -> prox; //avança o ponteiro para próximo nó
+	}
+	if(flag == 0){
+		Printf("\n\nElemento nao localizado");
+	}
+	getch();
+}
+
+
+//excluir um no de acordo com o conteudo informado pelo usuario
+void eliminarPorConteudo(int valor){
+	NO *excluir, *aux = cabeca, *anterior, *proximo;
+		white(aux != NULL{
+		if(aux->conteudo == valor){
+			excluir = aux;
+			if(aux == cabeca){ // exclusao do priomeiro nó
+				cabeca = cabeca-> prox;
+				free(excluir);
+				if(cabeca != NULL)
+					cabeca -> ant = NULL;
+				aux = cabeca;	//posiciona aux para continuar a busca
+		}else if(aux -> prox == NULL){ // exlusao do ultimo nó
+			excluir = aux;
+			anterior = aux -> ant;
+			free (excluir);
+			anterior ->prox = NULL;
+		}else{ //exclusao do nó intermedário
+			proximmo = aux -> prox;
+			anterior = aux -> ant;
+			free(excluir)
+			anterior -> prox = proximo;
+			proximo -> ant = anterior;
+			aux = proximo;
+		}
+			printf("\n\nElemento excluido com sucesso");
+		}
+		if(aux != NULL) // se tiver elementos na lista faz o avanço
+			aux = aux -> prox; // avança o ponteiro para o próximo nó
+	}
+}
+
+
+
+void exibirMedia(){
+	no *aux = cabeca;
+	int soma = 0, contador = 0;
+	if ( cabeca != NULL){ //verificar se ha elementos
+		while(aux != NULL){ //percorre toda a lista
+			soma += aux -> conteudo;
+			contador ++;
+			aux = aux -> prox;
+	}
+}
+printf("\n\nMedia: %.2f", (float)soma / (float)contador);
+getch()
+}
+
+void inserirPosicaoInformada(int valor, int valorParaInserirDepois){
+	no *aux=cabeca, *noAnterior, *noPosterior, *novo;
+	while(aux != NULL){ //percorre toda a lista
+		if(aux -> conteudo == valorParaInserirDepois){
+			novo = (no*)malloc(sizeof(no));
+			noAnterior = aux;
+			noPosterior = aux -> prox;
+			novo->conteudo = valor;
+			novo->prox = noPosterior;
+			novo->ant = noAnterior;
+			noAnterior->prox = novo;
+			if(noPosterior != NULL)
+				noPosterior->ant = novo;
+			printf*"\n\nNo Inserido com Sucesso");
+			getch();
+			break;
+		}
+		aux = aux -> prox;
+	}
+		
+	}
+
+
