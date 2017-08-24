@@ -5,11 +5,11 @@
 
 int vet []={1,4,6,77,100};
 
-void buscaBinaria(int chave){
+void buscaBinaria(int chave){//  valor tem que estar ordenado
 	
 	int esq=0;
 	int dir = TAM-1;
-	int valorMeio;
+	int valorMeio; // valor meio = chave de busca
 	
 	while (esq<=dir){
 		valorMeio=(esq+dir)/2;
